@@ -5,7 +5,7 @@ Very simple instagram tool,The idea is not in the tool, but in how to deal with 
 # Compile
 #Make sure that all linked offices are installed
 
-#Winux
+# Linux
 `linux: gcc main.c -lssl -ljson-c -lcrypto -luuid -lz -lcurl -o main`
-#Windows
+# Windows
 `Windows: it's support windows but there is a lot of error try to fix it your self =)`
