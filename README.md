@@ -3,7 +3,7 @@ Very simple instagram tool,The idea is not in the tool, but in how to deal with 
 `it may be a little bit messy. but you can learn something =)`
 
 # Compile
-#Make sure that all linked offices are installed
+#Make sure that all linked libraries are installed
 
 # Linux
 `linux: gcc main.c -lssl -ljson-c -lcrypto -luuid -lz -lcurl -o main`
