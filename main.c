@@ -21,9 +21,8 @@
 
 #include <openssl/ssl.h>
 #include <json-c/json.h>
-#include <zlib.h>
 #include <curl/curl.h>
-#include <signal.h>
+
 
 #define BLK "\x1b[0;30m"
 #define RED "\x1b[0;31m"
