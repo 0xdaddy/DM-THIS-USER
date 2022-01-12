@@ -43,6 +43,8 @@
 #define JOget(obj, key) json_object_object_get(obj,key)
 #define JSget(obj) json_object_get_string(obj)
 
+#define initSSL() SSL_load_error_strings(); SSL_library_init(); 
+
 #define array_size(arr) sizeof(arr) / sizeof(arr[0]) + 1
 
 #define _1KB 1400
@@ -130,7 +132,6 @@ char* enc_passw(char* passw);
 char* _sign(int sign);
 SOCKET createsocket();
 void clear();
-void initSSL() { SSL_load_error_strings(); SSL_library_init(); }
 char* recv_res(SSL** ssl_sock);
 char* remove_word(char* str, char* word_to_remove);
 char* create_uuid();
