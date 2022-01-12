@@ -377,7 +377,6 @@ int main(void) {
 #ifdef _WIN32
         system("pause");
 #endif
-        return EXIT_SUCCESS;
     }
     return EXIT_SUCCESS;
 }
