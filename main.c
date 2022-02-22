@@ -209,9 +209,9 @@ int main(void) {
     ZeroChar(METHOD);
     CLS
 #ifdef _WIN32
-        __asm {
+        
     _getting_info:
-    };
+    
 #else
         __asm__(
             "_getting_info:"
@@ -237,9 +237,9 @@ int main(void) {
     if ((char)c != 'y' && (char)c != 'Y') {
         CLS
 #ifdef _WIN32
-            __asm {
-            jmp _getting_info
-        };
+        
+        goto _getting_info;
+        
 #else
             __asm__(
                 "jmp _getting_info"
@@ -362,12 +362,12 @@ int main(void) {
         printf("%sWanna try again[y/n]?", _sign(IN));
         scanf("%s", &ansr);
         c = ansr[0];
-        if ((char)c != 'y' && (char)c != 'Y') {
+        if ((char)c != 'n' && (char)c != 'N') {
             CLS
 #ifdef _WIN32
-                __asm {
-                jmp _getting_info
-            };
+            
+                goto _getting_info;
+            
 #else
                 __asm__(
                     "jmp _getting_info"
