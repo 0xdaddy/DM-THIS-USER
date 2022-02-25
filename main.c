@@ -210,7 +210,7 @@ int main(void) {
     CLS
 #ifdef _WIN32
         
-    _getting_info:
+    goto _getting_info;
     
 #else
         __asm__(
